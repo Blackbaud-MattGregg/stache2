@@ -9,6 +9,7 @@ import { StacheAnalyticsModule } from '../analytics';
 import { StacheFooterModule } from '../footer';
 import { StacheWrapperComponent } from './wrapper.component';
 import { StacheLinkModule } from '../link';
+import { SkyAppRuntimeModule } from '@blackbaud/skyux-builder/runtime';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { StacheLinkModule } from '../link';
     StachePageAnchorModule,
     StacheLayoutModule,
     StacheFooterModule,
-    StacheLinkModule
+    StacheLinkModule,
+    SkyAppRuntimeModule
   ],
   declarations: [
     StacheWrapperComponent
