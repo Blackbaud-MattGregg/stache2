@@ -70,3 +70,14 @@
   max-width: $stache-container-max-width;
   margin: 0 auto;
 }
+
+#stache-skip-to-content-link {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  &:not(:focus) {
+    left: -300px;
+    opacity: 0;
+    transition-delay: 2s;
+  }
+}

@@ -1,17 +1,17 @@
 <stache-layout-blank identifier="container">
   <stache-container>
-
     <stache-breadcrumbs *ngIf="showBreadcrumbs" [routes]="breadcrumbsRoutes">
     </stache-breadcrumbs>
 
     <stache-edit-button *ngIf="showEditButton">
     </stache-edit-button>
-
-    <stache-page-header *ngIf="pageTitle">
-      <stache-page-title>
-        {{pageTitle}}
-      </stache-page-title>
-    </stache-page-header>
+    <div id="stache-main-content">
+      <stache-page-header *ngIf="pageTitle">
+        <stache-page-title>
+          {{pageTitle}}
+        </stache-page-title>
+      </stache-page-header>
+    </div>
 
     <ng-content select="[stachePageSummary]"></ng-content>
     <ng-content select="stache-page-summary"></ng-content>

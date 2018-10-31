@@ -8,6 +8,7 @@ import { StacheLayoutModule } from '../layout';
 import { StacheAnalyticsModule } from '../analytics';
 import { StacheFooterModule } from '../footer';
 import { StacheWrapperComponent } from './wrapper.component';
+import { StacheLinkModule } from '../link';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { StacheWrapperComponent } from './wrapper.component';
     StacheAnalyticsModule,
     StachePageAnchorModule,
     StacheLayoutModule,
-    StacheFooterModule
+    StacheFooterModule,
+    StacheLinkModule
   ],
   declarations: [
     StacheWrapperComponent
