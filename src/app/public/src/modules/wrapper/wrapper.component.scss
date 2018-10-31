@@ -73,11 +73,27 @@
 
 #stache-skip-to-content-link {
   position: absolute;
-  z-index: 9999;
-  left: 0;
+  z-index: 0;
+  left: $stache-padding;
+  top: 0;
+  padding: $stache-padding $stache-padding-double;
+  border: 1px solid $stache-border-color-neutral-medium;
+  border-top: none;
+  background-color: #fff;
+
   &:not(:focus) {
-    left: -300px;
-    opacity: 0;
-    transition-delay: 2s;
+    top: -200px;
+    transition: 4s;
+  }
+
+  &:focus {
+    z-index: 999;
+  }
+}
+
+::ng-deep
+.stache-omnibar-enabled {
+  #stache-skip-to-content-link {
+    top: $stache-omnibar-height;
   }
 }
